@@ -4,38 +4,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
     <title>Kerja Praktek TM</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-
+<style type="text/css">
+div.form-group {
+  text-align: center;
+}
+</style>
+	  
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-       <a class="navbar-brand" href="index.html">Kerja Praktek</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-             <li class="nav-item active">
-                <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
-             </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark "> 
+	   <a class="navbar-brand " href="index.html">Kerja Praktek</a>
+       
+	 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       	<span class="navbar-toggler-icon"></span>
+       	</button>
+       		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+          		<ul class="navbar-nav mr-auto">
+            		 <li class="nav-item active">
+               			 <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+             		 </li>
+            		 <li class="nav-item dropdown">
+               			 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Panduan</a>
+				 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   				<a class="dropdown-item" href="Panduan.pdf" target="_blank">Buku Panduan</a>
+                   				<a class="dropdown-item" href="Template.zip">Format Laporan</a>
+				   			 	<a class="dropdown-item" href="DP_B1.docx">Daftar Perusahaan</a>
+               				 </div>
+            		 </li>
+					
              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Panduan
-				</a>
-			   <div class="dropdown-menu" aria-labelledby="navbardropdown">
-                   <a class="dropdown-item" href="Panduan.pdf">Buku Panduan</a>
-                   <a class="dropdown-item" href="Template.zip">Format Laporan</a>
-				   <a class="dropdown-item" href="#">Daftar Perusahaan</a>
-                </div>
-             </li>
-             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Permohonan
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbardropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                    <a class="dropdown-item" href="permohonan.html">Proposal Perusahaan</a>
                    <a class="dropdown-item" href="#">Proposal Pembatalan</a>
                 </div>
@@ -48,29 +54,32 @@
              <li class="nav-item">
                 <a class="nav-link disabled" href="#">Laporan</a>
              </li>
-          </ul>
+          		</ul>
 		   
-       </div>
+       		</div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid text-">
+    <div class="jumbotron jumbotron-fluid ">
 		
-      <h2>Surat Permohonan Perusahaan</h2>
-      <form action="/action_page.php"><br>
-  Nama:
-  <input type="text" name="firstname" value="Jon">
-  <br>
-  NPM:
-  <input type="text" name="lastname" value="2015630028">
-  <br>
-  Nama Perusahaan:
-  <input type="text" name="lastname" value="BT-MEPPO">	  
-  <br><br>
-  <p>Upload Surat Penerimaan</p>
-  <input type="file" name="pic" accept=".pdf">
-  <br>
+      <h2 align="center">Surat Permohonan Perusahaan</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="nama">Nama:</label>
+      <input type="nama" class="form-control" id="nama" placeholder="Jonathan Chandra" name=" nama">
+    </div>
+    <div class="form-group">
+      <label for="npm">NPM:</label>
+      <input type="npm" class="form-control" id="npm" placeholder="2015630028" name="npm">
+    </div>
   
-  <input type="submit" value="Submit">
+  <p align="center">Upload Surat Penerimaan</p>
+  	<div class="file-upload-wrapper">
+  <input type="file" id="inputfile" class="file-upload" data-max-file-size="2M" />
+</div>
+  <br><br>
+
+  
+  <button type="submit" class="btn">Submit</button> 
 	
 </form> 
     </div>
