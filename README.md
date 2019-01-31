@@ -7,4 +7,5 @@ Log<br />
   *Forms and Upload pdf only File<br />
 **31/01/19 Malam Hari**<br />
   *Attatch File navigation bar Panduan<br />
-  *How to Center placeholders and buttons?
+  *How to Center placeholders and buttons?<br />
+  *How to change file input styles?
